@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - My First MVC Application</title>
+</head>
+<body>
+    <div>
+        <header>
+
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/Home/Index">Forside</a>
+                </li>
+                <li>
+                    <a href="/Home/About">Om mig</a>
+                </li>
+                <li>
+                    <a href="/Home/Contact">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="ContentWrapper">
+            @RenderBody()
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@model MVCIntro.Models.BaseModels.About
+
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+
+<p>
+    @Model.Text
+</p>
+
+@if (Model.Image != "N/A")
+{
+    <img src="~/Content/Images/@Model.Image" alt="About img" />
+}
