@@ -1,0 +1,15 @@
+﻿@model List<MVCIntro.Models.BaseModels.Gallery>
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<h2>Gallery</h2>
+
+<ul>
+    @foreach (MVCIntro.Models.BaseModels.Gallery galleryItem in Model)
+    {
+        <li>
+            <a href="/Home/ShowGallery/@galleryItem.GalleryID">@galleryItem.Title</a>
+        </li>
+    }
+</ul>

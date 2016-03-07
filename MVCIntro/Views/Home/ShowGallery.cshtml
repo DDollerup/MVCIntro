@@ -1,0 +1,11 @@
+﻿@model List<MVCIntro.Models.BaseModels.GalleryImage>
+@{
+    ViewBag.Title = "ShowGallery";
+}
+
+<h2>ShowGallery</h2>
+
+@foreach (MVCIntro.Models.BaseModels.GalleryImage galleryImageItem in Model)
+{
+    <img src="~/Content/Gallery/@galleryImageItem.Image" alt="@galleryImageItem.Title" />
+}
